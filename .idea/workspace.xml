@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1407dbdb-575f-44da-8209-d8a2f4b2bf20" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/bootstrap-datepicker.css" afterPath="$PROJECT_DIR$/dist/css/bootstrap-datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/dist/js/bootstrap-datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/js/bootstrap-datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/bootstrap-datepicker.min.css" afterPath="$PROJECT_DIR$/dist/css/bootstrap-datepicker.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/bootstrap-datepicker.min.js" afterPath="$PROJECT_DIR$/dist/js/bootstrap-datepicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/bootstrap-datepicker.standalone.css" afterPath="$PROJECT_DIR$/dist/css/bootstrap-datepicker.standalone.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/bootstrap-datepicker.standalone.min.css" afterPath="$PROJECT_DIR$/dist/css/bootstrap-datepicker.standalone.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/bootstrap-datepicker3.css" afterPath="$PROJECT_DIR$/dist/css/bootstrap-datepicker3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/bootstrap-datepicker3.min.css" afterPath="$PROJECT_DIR$/dist/css/bootstrap-datepicker3.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/bootstrap-datepicker3.standalone.css" afterPath="$PROJECT_DIR$/dist/css/bootstrap-datepicker3.standalone.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/bootstrap-datepicker3.standalone.min.css" afterPath="$PROJECT_DIR$/dist/css/bootstrap-datepicker3.standalone.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bootstrap-datepicker.iws" />
     <ignored path=".idea/workspace.xml" />
