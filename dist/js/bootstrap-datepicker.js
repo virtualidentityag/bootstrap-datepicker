@@ -366,7 +366,9 @@
 							this.element.is(e.target) ||
 							this.element.find(e.target).length ||
 							this.picker.is(e.target) ||
-							this.picker.find(e.target).length
+							this.picker.find(e.target).length ||
+							this.picker.hasClass('datepicker-inline') ||
+              this.element.siblings('.prevent-focus-layer').is(e.target) // only needed for ios polyfill!!!
 						)){
 							this.hide();
 						}
@@ -421,9 +423,10 @@
 			this.picker.show();
 			this._attachSecondaryEvents();
 			this._trigger('show');
-			if ((window.navigator.msMaxTouchPoints || 'ontouchstart' in document) && this.o.disableTouchKeyboard) {
-				$(this.element).blur();
-			}
+      // add matchMedia query to allow text input windows tablets and hybrid devices but prevent showing keyboard on small devices
+      if (((window.navigator.maxTouchPoints && matchMedia('only screen and (max-width: ' +ui.configuration.data.global.bpXSmallMax+ 'px)').matches) || 'ontouchstart' in document) && this.o.disableTouchKeyboard) {
+        $(this.element).blur();
+      }
 			return this;
 		},
 
@@ -446,7 +449,7 @@
 				)
 			)
 				this.setValue();
-			this._trigger('hide');
+			this._trigger('hideDatepicker'); //renamed event name to avoid conflicts with jquerys hide() method
 			return this;
 		},
 
