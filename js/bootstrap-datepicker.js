@@ -441,7 +441,7 @@
 			this._trigger('show');
       // add matchMedia query to allow text input windows tablets and hybrid devices but prevent showing keyboard on small devices
       if (((window.navigator.maxTouchPoints && matchMedia('only screen and (max-width: ' +ui.configuration.data.global.bpXSmallMax+ 'px)').matches) || 'ontouchstart' in document) && this.o.disableTouchKeyboard) {
-        $(this.element).blur();
+        $(this.element).trigger('blur');
       }
 			return this;
 		},
@@ -526,7 +526,7 @@
 			}
 
 			if (element) {
-				element.val('').change();
+				element.val('').trigger('change');
 			}
 
 			this.update();
@@ -559,11 +559,11 @@
 			var formatted = this.getFormattedDate();
 			if (!this.isInput){
 				if (this.component){
-					this.element.find('input').val(formatted).change();
+					this.element.find('input').val(formatted).trigger('change');
 				}
 			}
 			else {
-				this.element.val(formatted).change();
+				this.element.val(formatted).trigger('change');
 			}
 			return this;
 		},
@@ -902,7 +902,7 @@
 						tooltip = before.tooltip;
 				}
 
-				clsName = $.unique(clsName);
+				clsName = $.uniqueSort(clsName);
 				html.push('<td class="'+clsName.join(' ')+'"' + (tooltip ? ' title="'+tooltip+'"' : '') + '>'+prevMonth.getUTCDate() + '</td>');
 				tooltip = null;
 				if (prevMonth.getUTCDay() === this.o.weekEnd){
@@ -1110,7 +1110,7 @@
 				}
 			}
 			if (this.picker.is(':visible') && this._focused_from){
-				$(this._focused_from).focus();
+				$(this._focused_from).trigger('focus');
 			}
 			delete this._focused_from;
 		},
@@ -1157,7 +1157,7 @@
 				element = this.element.find('input');
 			}
 			if (element){
-				element.change();
+				element.trigger('change');
 			}
 			if (this.o.autoclose && (!which || which === 'date')){
 				this.hide();
@@ -1343,7 +1343,7 @@
 					element = this.element.find('input');
 				}
 				if (element){
-					element.change();
+					element.trigger('change');
 				}
 			}
 		},
